@@ -9,7 +9,7 @@ class Scraper
     location = doc.css(".student-location")
     peeps = []
     students.each do |student|
-      peeps = { :name => student.text.strip}
+      peeps << { :name => student.text.strip}
     end
     peeps
     binding.pry
