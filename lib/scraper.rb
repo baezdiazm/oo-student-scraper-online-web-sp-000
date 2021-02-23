@@ -8,7 +8,7 @@ class Scraper
 
     cards = doc.css(".card-text-container")
 
-    card.each do |item|
+    cards.each do |item|
       student = Student.new
       student.name = item.css(".student-name").text.strip
       student.location = item.css(".student-location").text.strip
