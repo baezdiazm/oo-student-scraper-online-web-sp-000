@@ -10,11 +10,14 @@ class Scraper
     locations = ""
 
 
-      students = doc.css(".student-name").text
-      location = doc.css(".student-location").text
+      students = doc.css(".student-name")
+      location = doc.css(".student-location")
 
+      doc.each do |student, location|
+        peeps << {:student => students.text.strip, :location => location.text.strip}
+      end
 
-    peeps << location
+    peeps
     binding.pry
   end
 
