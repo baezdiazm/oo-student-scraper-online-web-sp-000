@@ -9,8 +9,8 @@ class Scraper
     card = doc.css(".card-text-container")
     peeps = []
     card.each do |item|
-    peeps <<  {:name => item.css(".student-name"),
-        :location => item.css(".student-location")
+    peeps <<  {:name => item.css(".student-name").text,
+        :location => item.css(".student-location").text
       }
     end
 
