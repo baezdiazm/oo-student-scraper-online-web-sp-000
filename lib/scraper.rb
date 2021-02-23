@@ -7,8 +7,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     peeps = []
     cards = doc.css(".card-text-container")
-    cards.collect do |item|
-    peeps << {:name => item.css(".student-name").text,
+    cards.collect do |item|{:name => item.css(".student-name").text,
         :location => item.css(".student-location").text
       }
     end
