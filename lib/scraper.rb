@@ -12,7 +12,7 @@ class Scraper
     end
 
 
-    
+
     students.each do |student|
       peeps << { :name => student.text.strip}
     end
