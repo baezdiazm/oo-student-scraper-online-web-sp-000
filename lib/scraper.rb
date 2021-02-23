@@ -33,7 +33,7 @@ class Scraper
 
       hashy[:profile_quote] = social.css(".vitals-container .vitals-text-container .profile-quote").text
 
-      hashy[:bio] = social.attr("href")
+      #hashy[:bio] = social.attr("href")
 
     end
     hashy
