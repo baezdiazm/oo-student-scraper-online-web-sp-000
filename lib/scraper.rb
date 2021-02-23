@@ -10,6 +10,7 @@ class Scraper
     students.each do |student|
       peeps << student.text.strip
     end
+    peeps
     binding.pry
   end
 
