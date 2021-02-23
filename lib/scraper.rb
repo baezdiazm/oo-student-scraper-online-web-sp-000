@@ -7,13 +7,6 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
 
     cards = doc.css(".card-text-container")
-
-    cards.each do |item|
-      student = Student.new
-      student.name = item.css(".student-name").text.strip
-      student.location = item.css(".student-location").text.strip
-    end
-
     #students = doc.css(".student-name")
     #location = doc.css(".student-location")
     binding.pry
