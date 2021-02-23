@@ -6,8 +6,6 @@ class Scraper
   def self.scrape_index_page(index_url)
     doc = Nokogiri::HTML(open(index_url))
     peeps = []
-    students = ""
-    locations = ""
 
 
       students = doc.css(".student-name")
