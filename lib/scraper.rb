@@ -11,11 +11,6 @@ class Scraper
       location = doc.css(".student-location")
     end
 
-
-
-    students.each do |student|
-      peeps << { :name => student.text.strip}
-    end
     peeps
     #binding.pry
   end
