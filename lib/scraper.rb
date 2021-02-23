@@ -16,7 +16,7 @@ class Scraper
 
     #students = doc.css(".student-name")
     #location = doc.css(".student-location")
-    binding.pry
+    #binding.pry
   end
 
 
