@@ -19,6 +19,7 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
 
     social_media = doc.css(".vitals-container")
+    binding.pry
 
   end
 end
