@@ -20,7 +20,7 @@ class Scraper
     hashy = {}
     social_media = doc.css(".vitals-container .social-icon-container a")
     social_media.collect do |social|
-      hashy [:twitter] => social.attr("href").value
+      hashy [:twitter] = social.attr("href").value
     end
     #binding.pry
   end
