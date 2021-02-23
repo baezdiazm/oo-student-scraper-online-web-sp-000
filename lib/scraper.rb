@@ -7,6 +7,13 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
 
     card = doc.css(".card-text-container")
+
+    card.each do |item|
+      {:name => element.css(".student-name")
+        :location => element.css(".student-location")
+      }
+    end
+
     #students = doc.css(".student-name")
     #location = doc.css(".student-location")
     binding.pry
