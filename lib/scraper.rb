@@ -29,8 +29,11 @@ class Scraper
         hashy[:linkedin] = social.attr("href")
       elsif social.attr("href").include?("blog")
         hashy[:blog] = social.attr("href")
-
       end
+
+      hashy[:profile_quote] = social.attr("href")
+
+      hashy[:bio] = social.atttr("href")
 
     end
     hashy
