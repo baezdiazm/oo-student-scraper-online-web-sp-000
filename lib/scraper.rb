@@ -9,12 +9,12 @@ class Scraper
     students = ""
     locations = ""
 
-    doc.each do |item|
+
       students = doc.css(".student-name")
       location = doc.css(".student-location")
-    end
 
-    peeps
+
+    peeps << location
     binding.pry
   end
 
