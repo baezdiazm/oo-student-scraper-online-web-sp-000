@@ -10,7 +10,7 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(students_array)
+  def self.create_from_collection(students_array) ##Each element of this array is one hash, gotta iterate over this array to acept each indidual student, and #Initialize will grab their names and locations
 
     students_array.each do |element|
       student = Student.new(element)
