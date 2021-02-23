@@ -31,9 +31,9 @@ class Scraper
         hashy[:blog] = social.attr("href")
       end
 
-      hashy[:profile_quote] = social.attr("href").value
+      hashy[:profile_quote] = social.attr("href")
 
-      hashy[:bio] = social.attr("href").value
+      hashy[:bio] = social.attr("href")
 
     end
     hashy
