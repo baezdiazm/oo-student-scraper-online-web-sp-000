@@ -9,7 +9,7 @@ class Scraper
 
     cards.collect do |item|
       { :name => item.css(".student-name").text,
-        :location => item.css(".student-location").text
+        :location => item.css(".student-location").text,
         :profile_url => item.css(".student-profile").text
       }
     end
