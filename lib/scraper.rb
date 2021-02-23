@@ -7,9 +7,9 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
 
     card = doc.css(".card-text-container")
-
+    peeps = []
     card.each do |item|
-      {:name => item.css(".student-name"),
+    peeps <<  {:name => item.css(".student-name"),
         :location => item.css(".student-location")
       }
     end
