@@ -25,6 +25,11 @@ class Scraper
         hashy [:twitter] = social.attr("href")
       elsif social.attr("href").include?("github")
         hashy[:github] = social.attr("href")
+      elsif social.attr("href").include?("linkedin")
+        hashy[:linkedin] = social.attr("href")
+      elsif social.attr("href").include?("blog")
+        hashy[:blog] = social.attr("href")
+
       end
 
     end
