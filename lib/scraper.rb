@@ -10,7 +10,7 @@ class Scraper
     locations = ""
 
 
-      students = doc.css(".student-name")
+      students = doc.css(".student-name").text
       location = doc.css(".student-location").text
 
 
