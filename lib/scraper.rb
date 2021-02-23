@@ -7,7 +7,6 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     peeps = []
 
-
     students = doc.css(".student-name")
     location = doc.css(".student-location")
 
