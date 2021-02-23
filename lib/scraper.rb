@@ -33,6 +33,7 @@ class Scraper
       end
 
     end
+    hashy
     #binding.pry
   end
 end
