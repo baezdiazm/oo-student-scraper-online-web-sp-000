@@ -9,7 +9,7 @@ class Scraper
     card = doc.css(".card-text-container")
 
     card.each do |item|
-      {:name => item.css(".student-name")
+      {:name => item.css(".student-name"),
         :location => item.css(".student-location")
       }
     end
