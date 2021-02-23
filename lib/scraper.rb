@@ -8,7 +8,7 @@ class Scraper
     students = doc.css(".student-name")
     peeps = []
     students.each do |student|
-      puts student.text.strip
+      peeps << student.text.strip
     end
     binding.pry
   end
