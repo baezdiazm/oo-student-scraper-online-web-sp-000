@@ -33,7 +33,7 @@ class Scraper
 
       hashy[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
 
-      hashy[:bio] = doc.css(".details-container .description-holder").text
+      hashy[:bio] = doc.css(".details-container bio-block details-block .bio-content content-holder .description-holder p").text
 
     end
     hashy
