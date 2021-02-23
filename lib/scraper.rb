@@ -13,10 +13,6 @@ class Scraper
         :profile_url => item.attr('href')
       }
     end
-
-    #students = doc.css(".student-name")
-    #location = doc.css(".student-location")
-    #binding.pry
   end
 
 
