@@ -11,7 +11,7 @@ class Scraper
 
 
       students = doc.css(".student-name")
-      location = doc.css(".student-location")
+      location = doc.css(".student-location").text
 
 
     peeps << location
