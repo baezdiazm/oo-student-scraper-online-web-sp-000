@@ -19,8 +19,14 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     hashy = {}
     social_media = doc.css(".vitals-container .social-icon-container a")
+
     social_media.collect do |social|
-      hashy [:twitter] = social.attr("href")
+      if social.attr("href").include?("twitter")
+        hashy [:twitter] = social.attr("href")
+      elsif social.attr("href").include?("github")
+        hashy[:github] = social.attr("href")
+      end
+
     end
     #binding.pry
   end
