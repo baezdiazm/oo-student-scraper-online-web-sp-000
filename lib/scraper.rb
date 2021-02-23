@@ -31,7 +31,7 @@ class Scraper
         hashy[:blog] = social.attr("href")
       end
 
-      hashy[:profile_quote] = doc.css(".vitals-container .vitals-text-container profile-quote").text
+      hashy[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
 
       #hashy[:bio] = social.attr("href")
 
